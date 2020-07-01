@@ -1,9 +1,9 @@
 import java.util.*;
 import java.io.*;
-class Node{
-    Node left,right;
+class Node0 {
+    Node0 left,right;
     int data;
-    Node(int data){
+    Node0(int data){
         this.data=data;
         left=right=null;
     }
@@ -24,8 +24,10 @@ class Node{
  * 7
  * */
 class BSTs {
-
-    public static int getHeight(Node root){
+    /**
+     * Function to get the height of the Binary Search Tree (BST)
+     * */
+    public static int getHeight(Node0 root){
         //Write your code here
         if (root == null) {
             return -1;
@@ -41,12 +43,12 @@ class BSTs {
         }
     }
 
-    public static Node insert(Node root,int data){
+    public static Node0 insert(Node0 root,int data){
         if(root==null){
-            return new Node(data);
+            return new Node0(data);
         }
         else{
-            Node cur;
+            Node0 cur;
             if(data<=root.data){
                 cur=insert(root.left,data);
                 root.left=cur;
@@ -61,7 +63,7 @@ class BSTs {
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         int T=sc.nextInt();
-        Node root=null;
+        Node0 root=null;
         while(T-->0){
             int data=sc.nextInt();
             root=insert(root,data);
