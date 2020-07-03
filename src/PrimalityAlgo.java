@@ -37,7 +37,7 @@ public class PrimalityAlgo {
         if (num < 2) return false; // number less than 2 return false
         if (num == 2) return true; // number equals 2 return true
         if (num % 2 == 0) return false; // if even number return false (2 not included)
-        for (int i = 3; (i*i) < num; i+=2) {
+        for (int i = 3; (i*i) <= num; i+=2) {
             if (num % i == 0) return false;
         }
         return true;
