@@ -31,7 +31,7 @@ public class UnitTesting {
     }
 
     static class TestDataUniqueValues {
-        static int[] arr = { 2, 3, 1 };
+        static int[] arr = { 2, 3, 5, 1 };
         public static int[] get_array() {
             // complete this function
             return arr;
@@ -39,18 +39,12 @@ public class UnitTesting {
 
         public static int get_expected_result() {
             // complete this function
-            int minIndex = 0;
-            for (int i = 0; i < arr.length; i++) {
-                if (arr[minIndex] > arr[i]) {
-                    minIndex = i;
-                }
-            }
-            return minIndex;
+            return 3;
         }
     }
 
     static class TestDataExactlyTwoDifferentMinimums {
-        static int[] arr = { 1, 1 };
+        static int[] arr = { 1, 5, 3, 1, 8 };
         public static int[] get_array() {
             // complete this function
             return arr;
@@ -58,13 +52,7 @@ public class UnitTesting {
 
         public static int get_expected_result() {
             // complete this function
-            int minIndex = 0;
-            for (int i = 0; i < arr.length; i++) {
-                if (arr[minIndex] > arr[i]) {
-                    minIndex = i;
-                }
-            }
-            return minIndex;
+            return 0;
         }
     }
 
