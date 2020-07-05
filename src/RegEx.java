@@ -38,8 +38,8 @@ public class RegEx {
 
             Matcher matcher = pattern.matcher(emailID);
             if (matcher.find() &&
-                    (firstName.length() > 0 && firstName.length() < 21) &&
-                    (emailID.length() > 0 && emailID.length() < 51))
+                (firstName.length() > 0 && firstName.length() < 21) &&
+                (emailID.length() > 0 && emailID.length() < 51))
             {
                 gmailNames.add(firstName);
             }
