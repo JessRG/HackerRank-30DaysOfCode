@@ -6,6 +6,10 @@ import java.util.regex.*;
 
 /**
  * HackerRank Day 0: Hello, World.
+ *
+ * Sample Input:
+ *
+ * Welcome to 30 Days of Code!
  * */
 public class HelloWorld {
     public static void main(String[] args) {
